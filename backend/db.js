@@ -25,7 +25,7 @@ dbconnection.connect((err) => {
     }
 })
 
-app.post('/add', (req, res) => {
+app.post('/api/mysql', (req, res) => {
     const data = req.body;
     const query = `INSERT INTO uidb (name, email, phone) VALUES (?, ?, ?)`;
     dbconnection.query(query, [data.name, data.email, data.phone], (err, result) => {
@@ -40,10 +40,10 @@ app.post('/add', (req, res) => {
 });
 
 
-app.get("/", (req, res) => {
-    console.log("home")
-    res.send("home")
-})
+// app.get("/", (req, res) => {
+//     console.log("home")
+//     res.send("home")
+// })
 
 app.listen(port, () => {
     console.log(`Started at ${port}`)

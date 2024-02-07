@@ -9,6 +9,7 @@ function ButtonComponent() {
         <a href="/contact">Contact</a>
         <a href="/about">About</a>
         <a href="/form">Form !!</a>
+        <a href="/fileupload">File upload</a>
       </div>
     </>
   );

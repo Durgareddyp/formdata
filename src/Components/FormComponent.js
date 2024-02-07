@@ -15,9 +15,9 @@ export default function FormComponent() {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("sumit data",data)
+        console.log("submit data",data)
         try {
-          await axios.post('http://localhost:3001/add', data);
+          await axios.post('http://localhost:3001/api/mongodb', data);
           console.log("Formdata added to db");
         } catch (error) {
           console.error('Error:', error.message);
