@@ -10,11 +10,11 @@ const port = 3001
 app.use(bodyparser.json())
 app.use(cors())
 
-const dbconnection = mysql.createConnection({
-    host: 'sql6.freemysqlhosting.net',
-    user: 'sql6680145',
-    password: 'j6ADkRSbCQ',
-    database: 'sql6680145',
+const dbconnection = mysql.createConnectionp({
+    host: 'database-1.cpfddbhohgyv.eu-north-1.rds.amazonaws.com',
+    user: 'database-1',
+    password: 'Durga1234',
+    database: '',
 })
 
 dbconnection.connect((err) => {

@@ -10,6 +10,7 @@ function ButtonComponent() {
         <a href="/about">About</a>
         <a href="/form">Form !!</a>
         <a href="/fileupload">File upload</a>
+        <a href="/loginpage">Login page</a>
       </div>
     </>
   );

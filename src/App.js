@@ -6,6 +6,7 @@ import ContactComponent from "./Components/ContactComponent";
 import NotFoundComponent from "./Components/404Component";
 import FormComponent from "./Components/FormComponent";
 import FileUploadForm from "./Components/FileUpload";
+import LoginComponent from "./Components/LoginComponent";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="*" element={<NotFoundComponent />} />
         <Route path="/form" element={<FormComponent/>}/>
         <Route path="/fileupload" element={<FileUploadForm/>}/>
+        <Route path="/loginpage" element={<LoginComponent/>}/>
   
       </Routes>
     </Router>
